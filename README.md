@@ -92,7 +92,7 @@ rule: hold state as high as necessary but NO HIGHER. For example:
 
 ![alt map](https://i.imgur.com/ge9Hfz9.jpg)
 
-### Checkpoint 3: Render the Areas
+### Checkpoint 3: Render the Areas - 
 
 Area info comes in through the `/areas` endpoint. You'll have to use that to
 render the right number of area components on the map. Styling is given for you,
@@ -100,7 +100,7 @@ but you'll have to pass the area name to the `id` attribute to make it appear in
 the right place on the map. Format the name to remove underscores and capitalize
 all words for the label. Ex: `high_plains` should be displayed as "High Plains"
 
-### Checkpoint 4: Render the Hosts
+### Checkpoint 4: Render the Hosts - 
 
 The `Host` component represents a host Thumbnail. You'll have to render the
 appropriate number of hosts based on the data fetched from the `/hosts` endpoint
@@ -138,7 +138,7 @@ Follow these rules for selecting and moving hosts:
 7. Setting a host's toggle to Decommissioned should immediately remove them from
    their area and place them in `ColdStorage`.
 
-### Checkpoint 6: Limit Hosts
+### Checkpoint 6: Limit Hosts 
 
 Each `Area` should only allow the number of hosts given by that area's limit
 attribute. This includes hosts set to areas in `ColdStorage`. This is a hard
